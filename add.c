@@ -1,7 +1,7 @@
 #include <stdio.h>
 //this code will be used to add two numbers
 int main(){
-    int num1 = 3, num2 = 6, sum;
+    int num1,num2, sum;
     printf("Enter the first number: ");
     scanf("%d", &num1);
     printf("Enter the second number:");
@@ -10,4 +10,3 @@ int main(){
     printf("The sum of %d and %d is %d.\n", num1,num2,sum);
     return 0;
 }
-//Here we have take the examples of the no.s 3 and 6..
