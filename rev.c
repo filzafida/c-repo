@@ -1,4 +1,4 @@
-// Display the digits of any natural numebr in reverse order . [Use while loop]
+// Display the digits of any natural number in reverse order . [Use while loop]
 
 #include <stdio.h>
 
