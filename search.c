@@ -1,5 +1,3 @@
-// to search for an element in an integer array(linear search)
-
 #include <stdio.h>
 int main()
 {

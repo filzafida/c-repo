@@ -4,7 +4,7 @@
 
 int main()
 {
-    char name[10] = "hadid";
+    char name[10] = "filza";
     char *s = name;
     char *e = s;
 
@@ -12,7 +12,6 @@ int main()
     {
         e++;
     }
-    e--;
     while (e >= s)
     {
         printf("%c", *e);

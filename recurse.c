@@ -1,22 +1,26 @@
-// find factorial of a number using recursion
-
 #include <stdio.h>
-long int fact(int);
-int main()
-{
-    int n;
-    long int ans;
-    printf("enter the number:\n");
-    scanf("%d", &n);
-    ans = fact(n);
-    printf("Factorial of %d is %ld", n, ans);
-    return 0;
+
+// Recursive function to return nth Fibonacci number
+int fibonacci(int n) {
+    if (n == 0)
+        return 0;
+    else if (n == 1)
+        return 1;
+    else
+        return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-long int fact(int n)
-{
-    if (n > 1)
-        return n * fact(n - 1);
-    else
-        return 1;
+int main() {
+    int n;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series up to %d terms:\n", n);
+    for (int i = 0; i < n; i++) {
+        printf("%d ", fibonacci(i));
+    }
+
+    printf("\n");
+    return 0;
 }
